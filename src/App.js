@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+
+import About from "./components/about";
+import Hero from "./components/hero";
+import Navbar from "./components/navbar";
+import NavBarDetail from "./components/navbarDetail";
 
 function App() {
+  const [nav, setNav] = useState(false);
+
   return (
     <>
-      <h1 className="text-3xl font-bold underline">NFT Portfolio Version 1 Mine</h1>
+      {nav ? (
+        <NavBarDetail setValue={setNav} />
+      ) : (
+        <>
+          <Navbar setValue={setNav} />
+          <Hero />
+          <About />
+        </>
+      )}
     </>
   );
 }
