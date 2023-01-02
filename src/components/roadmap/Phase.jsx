@@ -1,8 +1,9 @@
 import React from "react";
-import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
-import { TbBrandTwitter } from "react-icons/tb";
-import { SiInstagram } from "react-icons/si";
+
 import { HiOutlineMail } from "react-icons/hi";
+import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
+import { SiInstagram } from "react-icons/si";
+import { TbBrandTwitter } from "react-icons/tb";
 
 const Phase = ({
   phase_no,
@@ -16,7 +17,7 @@ const Phase = ({
     <div>
       <h1 className="text-3xl font-bold">PHASE {phase_no + 1}</h1>
       <div className="md:flex md:space-x-5">
-        <div className="flex justify-center">
+        <div className="flex justify-center md:w-[1400px]">
           <img className=" w-[70%] md:w-[85%] my-5" src={img} alt="" />
         </div>
         <div className="md:flex items-center justify-center lg:text-lg">
