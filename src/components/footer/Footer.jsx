@@ -1,9 +1,11 @@
 import React from "react";
-import logo from "../../images/footer/portfolioLogo.png";
+
 import divider from "../../images/footer/divide.webp";
-import { TbBrandTwitter } from "react-icons/tb";
-import { SiInstagram } from "react-icons/si";
+import logo from "../../images/footer/portfolioLogo.png";
+
 import { HiOutlineMail } from "react-icons/hi";
+import { SiInstagram } from "react-icons/si";
+import { TbBrandTwitter } from "react-icons/tb";
 
 const Footer = () => {
   return (

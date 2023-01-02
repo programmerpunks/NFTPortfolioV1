@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { RoadMapDetail } from "./roadmap";
 import Phase from "./Phase";
 import get_phase_filtered from "./Helping_Functions";
@@ -6,11 +7,8 @@ import get_phase_filtered from "./Helping_Functions";
 const RoadMap = () => {
   const [phaseCount, setPhaseCount] = useState(0);
   let phase = get_phase_filtered(phaseCount, RoadMapDetail);
-  console.log(phase);
   return (
     <div className="bg-gradient-to-t from-[#75013f] to-black text-white rounded-3xl p-5 mx-[10%]">
-      {/* {RoadMapDetail.map((phase) => {
-        return ( */}
       <Phase
         phase_no={phase.phase}
         heading={phase.heading}
@@ -19,8 +17,6 @@ const RoadMap = () => {
         phaseCount={phaseCount}
         setPhaseCount={setPhaseCount}
       />
-      {/* );
-      })} */}
     </div>
   );
 };

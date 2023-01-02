@@ -1,4 +1,5 @@
 import React from "react";
+
 import pic from "../../images/footer/portfolioLogo.png";
 
 const Team = () => {
@@ -24,7 +25,7 @@ const Team = () => {
           </button>
         </div>
         <div>
-          <div className="bg-gradient-to-t from-[#75013f] to-black text-white  rounded-3xl">
+          <div className="bg-gradient-to-t from-[#75013f] to-black text-white rounded-3xl">
             <div className="flex justify-center py-7 ">
               <img className="w-[70%]" src={pic} alt="" />
             </div>
