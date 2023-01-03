@@ -1,5 +1,8 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Model } from "./Pokemon.jsx";
 
 const logo = require("../../images/navbar/portfolioLogo.png");
 
@@ -55,7 +58,15 @@ const NavBarDetail = ({ setValue }) => {
                   LOUNGE
                 </button>
               </div>
-              <div className="flex w-full justify-evenly mt-[70%]">
+              <div className="bg-transparent z-40  h-[50%] mt-[4%]">
+                <Canvas>
+                  <OrbitControls enableZoom={true} />
+                  <ambientLight intensity={0.5} />
+                  <directionalLight position={[-2, 5, 2]} intensity={1} />
+                  <Model />
+                </Canvas>
+              </div>
+              <div className="flex w-full justify-evenly mt-[1%]">
                 <div className="flex">
                   <div className="flex p-4 text-white text-[32px] text-center">
                     3D BURROWS MODEL
