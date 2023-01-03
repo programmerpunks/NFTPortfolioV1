@@ -16,14 +16,14 @@ function App() {
       {nav ? (
         <NavBarDetail setValue={setNav} />
       ) : (
-        <>
+        <div className="bg-gradient-to-r from-[#75013f] to-black">
           <Navbar setValue={setNav} />
           <Hero />
           <About />
           <RoadMap />
           <Team />
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

@@ -9,7 +9,7 @@ import { TbBrandTwitter } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <div className=" py-20 text-xs sm:text-sm md:text-base">
+    <div className=" py-20 text-xs sm:text-sm md:text-base text-white">
       <div className="flex justify-evenly">
         <div>
           <ul className="space-y-2">

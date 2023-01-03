@@ -4,7 +4,7 @@ import pic from "../../images/footer/portfolioLogo.png";
 
 const Team = () => {
   return (
-    <div className="mx-[10%]">
+    <div className="mx-[10%] text-white">
       <div className="text-center py-10">
         <h1 className="font-bold text-3xl">MEET THE TEAM</h1>
         <p>Behind your burrows</p>
