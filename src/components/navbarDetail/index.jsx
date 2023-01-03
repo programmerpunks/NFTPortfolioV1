@@ -1,5 +1,6 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+
 const logo = require("../../images/navbar/portfolioLogo.png");
 
 const NavBarDetail = ({ setValue }) => {

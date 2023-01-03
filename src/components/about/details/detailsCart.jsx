@@ -1,7 +1,6 @@
 import React from "react";
 
 const DetailCart = ({cartItem}) => {
-  console.log(cartItem)
   return (
     <>
       <div className="flex m-2 flex-col justify-evenly items-center rounded-[35px] border-2

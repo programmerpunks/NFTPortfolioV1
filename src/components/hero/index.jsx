@@ -1,8 +1,8 @@
 import React from "react";
-
-import { FiTwitter } from "react-icons/fi";
-import { FiInstagram } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
+
 const verticalLine = require("../../images/hero/hero-section-line.webp");
 
 const Hero = () => {

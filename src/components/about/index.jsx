@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 import Category from "./category";
+import categoryData from "./data/categorySelectionAPI";
 import Details from "./details";
 import get_category_Filtered from "./helpingFunctions/categorySelection";
-import categoryData from "./data/categorySelectionAPI";
+
 const About = () => {
   const [categoryItem, setCategoryItem] = useState("THE HIGH ROLLA")
 
