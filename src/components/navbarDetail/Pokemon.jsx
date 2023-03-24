@@ -1,9 +1,10 @@
 import React, { useRef } from 'react'
+
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from "@react-three/fiber";
 
 export function Model(props) {
-  const ref:any = useRef();
+  const ref = useRef();
   useFrame(() => (ref.current.rotation.z += 0.01));
   const { nodes, materials } = useGLTF('/pokemon.gltf')
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import { RoadMapDetail } from "./roadmap";
-import Phase from "./Phase";
 import get_phase_filtered from "./Helping_Functions";
+import Phase from "./Phase";
+import { RoadMapDetail } from "./roadmap";
 
 const RoadMap = () => {
   const [phaseCount, setPhaseCount] = useState(0);

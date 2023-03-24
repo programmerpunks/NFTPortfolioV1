@@ -1,5 +1,5 @@
-import { CgMenuLeft } from "react-icons/cg";
 import React from "react";
+import { CgMenuLeft } from "react-icons/cg";
 
 const logo = require("../../images/navbar/portfolioLogo.png");
 

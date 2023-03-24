@@ -13,12 +13,14 @@ const Team = () => {
         <div className="space-y-5">
           <h1 className="font-bold text-2xl">The Team</h1>
           <p className="lg:text-xl">
-            Beyond is an award-winning, New Zealand-based game studio on a
-            mission to bring VR to the masses.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+            tempore nemo ducimus repellat fugiat exercitationem, at dignissimos
+            non sapiente hic consequatur
           </p>
           <p className="lg:text-xl">
-            Combining the latest immersive technology with intuitive social
-            play, we're here to bring the future of fun to life.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            quod aliquid quas nisi a debitis, molestiae amet, suscipit tempora
+            quibusdam quidem 
           </p>
           <button className="border rounded-lg py-3 px-4 text-xs">
             READ MORE ABOUT US

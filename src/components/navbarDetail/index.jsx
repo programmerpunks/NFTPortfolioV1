@@ -1,8 +1,9 @@
 import React from "react";
-import { RxCross2 } from "react-icons/rx";
+
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Model } from "./Pokemon.jsx";
+import { RxCross2 } from "react-icons/rx";
 
 const logo = require("../../images/navbar/portfolioLogo.png");
 
