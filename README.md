@@ -12,6 +12,8 @@
 
 - Tailwind: 3.2.4
 
+- Three js: 0.148.0
+
 ### Developer Setup:
 
 Following are the steps to run this React application on your system.
