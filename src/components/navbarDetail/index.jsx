@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { Model } from "./Pokemon.jsx";
+import { OrbitControls } from "@react-three/drei";
 import { RxCross2 } from "react-icons/rx";
 
-const logo = require("../../images/navbar/portfolioLogo.png");
+import { navbarDetailsData } from "../../content/NavbarDetails/index.js";
 
 const NavBarDetail = ({ setValue }) => {
   return (
@@ -13,7 +13,7 @@ const NavBarDetail = ({ setValue }) => {
       <div className="h-screen  bg-gradient-to-t from-[#51022c] to-black">
         <div className="flex bg-transparent justify-between p-2 px-10 fixed top-0 w-full">
           <div className="w-[10%] items-center flex">
-            <img src={logo} alt="/" />
+            <img src={navbarDetailsData.logo} alt="/" />
           </div>
           <RxCross2
             size={35}
@@ -25,38 +25,38 @@ const NavBarDetail = ({ setValue }) => {
           <div className="flex">
             <div className="flex pt-10 justify-start w-[70%] flex-col px-80">
               <div className="flex text-[#b1b1b1] justify-between text-center border-b-2 flex-col md:flex-row cursor-pointer">
-                <div className="border-b-4 p-1 lg:p-5 text-white">DEN</div>
+                <div className="border-b-4 p-1 lg:p-5 text-white">{navbarDetailsData.den}</div>
                 <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  SUITE
+                  {navbarDetailsData.suit}
                 </div>
                 <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  HIGH ROLLA
+                  {navbarDetailsData.roll}
                 </div>
                 <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  STUDIO SNOOP DOGG
+                  {navbarDetailsData.snoop}
                 </div>
               </div>
               <div className="flex flex-wrap mt-10 justify-center">
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] text-white">
-                  ENTRANCE
+                  {navbarDetailsData.entrance}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#9101D0] text-[#9101D0]">
-                  GALLERY
+                  {navbarDetailsData.gallery}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#AD8205] text-[#AD8205]">
-                  HOT TUB
+                  {navbarDetailsData.tub}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#00B702] text-[#00B702]">
-                  KITCHEN
+                  {navbarDetailsData.kitchen}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#FFE000] text-[#FFE000]">
-                  NIGHTCLUB
+                  {navbarDetailsData.club}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#B101B0] text-[#B101B0]">
-                  BEDROOM
+                  {navbarDetailsData.bedroom}
                 </button>
                 <button className="flex m-1 text-center p-2 px-8 rounded-lg border-[0.5px] border-[#41EAD4] text-[#41EAD4]">
-                  LOUNGE
+                  {navbarDetailsData.lounge}
                 </button>
               </div>
               <div className="bg-transparent z-40  h-[50%] mt-[4%]">
@@ -70,12 +70,12 @@ const NavBarDetail = ({ setValue }) => {
               <div className="flex w-full justify-evenly mt-[1%]">
                 <div className="flex">
                   <div className="flex p-4 text-white text-[32px] text-center">
-                    3D BURROWS MODEL
+                    {navbarDetailsData.model}
                   </div>
                   <div className="flex items-center ">
                     <RxCross2 size={25} className="text-white" />
                   </div>
-                  <div className="text-white items-center flex">HIGH ROLLA</div>
+                  <div className="text-white items-center flex">{navbarDetailsData.roll}</div>
                 </div>
               </div>
             </div>
@@ -83,32 +83,32 @@ const NavBarDetail = ({ setValue }) => {
               <ul className="flex flex-col justify-center text-end p-10 ">
                 <div className="flex flex-col p-5 text-[24px] text-white">
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    Twitter
+                    {navbarDetailsData.twiiter}
                   </li>
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    Medium
+                    {navbarDetailsData.medium}
                   </li>
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    The Team
+                    {navbarDetailsData.team}
                   </li>
                 </div>
                 <div className="flex flex-col p-5 text-[48px]">
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    LORE
+                    {navbarDetailsData.lore}
                   </li>
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    BURROWS
+                    {navbarDetailsData.burrow}
                   </li>
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    FLUF WORLD
+                    {navbarDetailsData.fluf}
                   </li>
                   <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    ROADMAP
+                    {navbarDetailsData.roadmap}
                   </li>
                 </div>
                 <div className="flex flex-col text-center p-5">
                   <li className="outline outline-gray-500 rounded-lg cursor-pointer hover:outline-white outline-1 p-2 text-white">
-                    JOIN OUR COMMUNITY
+                    {navbarDetailsData.community}
                   </li>
                 </div>
               </ul>

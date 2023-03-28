@@ -1,13 +1,13 @@
-const den_bg = require("../../../images/detail/den/denBackground.png");
-const suite_bg = require("../../../images/detail/suite/suiteBackground.png");
-const rolla_bg = require("../../../images/detail/rolla/rollaBackground.png");
-const snoop_bg = require("../../../images/detail/snoop/snoopBackground.png");
-
+const den_bg = require("../../images/detail/den/denBackground.png");
+const suite_bg = require("../../images/detail/suite/suiteBackground.png");
+const rolla_bg = require("../../images/detail/rolla/rollaBackground.png");
+const snoop_bg = require("../../images/detail/snoop/snoopBackground.png");
 
 const categoryData = [
   {
     title: "THE DEN",
     tagLine: "The Den - Minimalist design, maximum enjoyment.",
+    type: "Den Accessories",
     accessories: [
       {
         accessory: "Living area",
@@ -34,6 +34,7 @@ const categoryData = [
   {
     title: "THE SUITE",
     tagLine: "The Suite - Spacious, luxurious...welcome to the Suite life.",
+    type: "Den Accessories",
     accessories: [
       {
         accessory: "Art gallery",
@@ -61,6 +62,7 @@ const categoryData = [
     title: "THE HIGH ROLLA",
     tagLine:
       "The High Rolla - Our presidential pad for Flufs who love to party.",
+    type: "Den Accessories",
     accessories: [
       {
         accessory: "Your very own nightclub",
@@ -88,6 +90,7 @@ const categoryData = [
     title: "STUDIO SNOOP DOGG",
     tagLine:
       "Studio Snoop DoGG - Enter Snoop Dogg's custom, highly-limited Burrow.",
+    type: "Den Accessories",
     accessories: [
       {
         accessory: "Your very own nightclub",
@@ -110,6 +113,9 @@ const categoryData = [
         bg_img: snoop_bg,
       },
     ],
+  },
+  {
+    title: "COMPARE BURROWS",
   },
 ];
 

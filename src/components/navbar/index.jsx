@@ -1,14 +1,14 @@
 import React from "react";
 import { CgMenuLeft } from "react-icons/cg";
 
-const logo = require("../../images/navbar/portfolioLogo.png");
+import { navbarData } from "../../content/Navbar";
 
 const Navbar = ({ setValue }) => {
   return (
     <>
       <div className="flex  bg-transparent justify-between p-2 px-10 fixed z-30 top-0 w-full">
         <div className="w-[10%] items-center flex">
-          <img src={logo} alt="/" />
+          <img src={navbarData.logo} alt="/" />
         </div>
         <CgMenuLeft
           size={35}

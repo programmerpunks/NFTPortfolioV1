@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import get_phase_filtered from "./Helping_Functions";
 import Phase from "./Phase";
-import { RoadMapDetail } from "./roadmap";
+import { RoadMapDetail } from "../../content/RoadMap";
 
 const RoadMap = () => {
   const [phaseCount, setPhaseCount] = useState(0);

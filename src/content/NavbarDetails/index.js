@@ -1,0 +1,25 @@
+const logo = require("../../images/navbar/portfolioLogo.png");
+
+export const navbarDetailsData = {
+  logo: logo,
+  den:'DEN',
+  suit: "SUITE",
+  roll: "HIGH ROLLA",
+  snoop: "STUDIO SNOOP DOGG",
+  entrance: "ENTRANCE",
+  gallery: "GALLERY",
+  tub: "HOT TUB",
+  kitchen: "KITCHEN",
+  club: "NIGHTCLUB",
+  bedroom: "BEDROOM",
+  lounge: "LOUNGE",
+  model: "3D BURROWS MODEL",
+  twiiter: "Twitter",
+  medium: "Medium",
+  team: "The Team",
+  lore: "LORE",
+  burrow: "BURROWS",
+  fluf: "FLUF WORLD",
+  roadmap: "ROADMAP",
+  community: "JOIN OUR COMMUNITY",
+};

@@ -1,9 +1,8 @@
 import React from "react";
 
-import { HiOutlineMail } from "react-icons/hi";
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
-import { SiInstagram } from "react-icons/si";
-import { TbBrandTwitter } from "react-icons/tb";
+
+import { socialLinks } from "../../content/SocialLink";
 
 const Phase = ({
   phase_no,
@@ -48,28 +47,28 @@ const Phase = ({
         <div className="flex items-center text-4xl">{phase_no + 1}</div>
         <div className="flex space-x-2 items-center">
           <a
-            href="https://twitter.com"
+            href={socialLinks.twiiterLin}
             className="hover:cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
-            <TbBrandTwitter size={30} />
+            {socialLinks.twitter}
           </a>
           <a
-            href="https://www.instagram.com"
+            href={socialLinks.instagramLink}
             className="hover:cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
-            <SiInstagram size={25} />
+            {socialLinks.instagram}
           </a>
           <a
-            href="https://www.gmail.com"
+            href={socialLinks.mailLink}
             className="hover:cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
-            <HiOutlineMail size={30} />
+            {socialLinks.mail}
           </a>
         </div>
       </div>

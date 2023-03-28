@@ -14,13 +14,15 @@ const Details = ({ categoryDetails, categoryValue }) => {
           <CompareBurrows />
         ) : (
           <div className="flex pt-10 w-full flex-wrap justify-center">
-            {
-              categoryDetails.accessories.map((catItem)=>{
-                return (
-                  <DetailCart key={catItem.accessory} cartItem={catItem} />
-                )
-              })
-            }
+            {categoryDetails.accessories.map((catItem) => {
+              return (
+                <DetailCart
+                  key={catItem.accessory}
+                  type={categoryDetails.type}
+                  cartItem={catItem}
+                />
+              );
+            })}
           </div>
         )}
       </div>
