@@ -13,9 +13,9 @@ const About = () => {
   return (
     <>
       <div className="flex bg-gradient-to-r from-[#75013f] to-black justify-center items-center p-10 flex-col lg:px-40">
-        <div className="flex p-4">
-          <div className="text-3xl text-white ">{AboutData.title}</div>
-          <div className="text-white ml-10 p-2">{AboutData.description}</div>
+        <div className="flex flex-col md:flex-row items-center p-4">
+          <div className="flex w-full items-start justify-center text-3xl text-white">{AboutData.title}</div>
+          <div className="text-white m-0 md:ml-10 p-2">{AboutData.description}</div>
         </div>
         <Category
           setCategoryValue={setCategoryItem}

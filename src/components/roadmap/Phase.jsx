@@ -46,30 +46,18 @@ const Phase = ({
         </div>
         <div className="flex items-center text-4xl">{phase_no + 1}</div>
         <div className="flex space-x-2 items-center">
-          <a
-            href={socialLinks.twiiterLin}
-            className="hover:cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {socialLinks.twitter}
-          </a>
-          <a
-            href={socialLinks.instagramLink}
-            className="hover:cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {socialLinks.instagram}
-          </a>
-          <a
-            href={socialLinks.mailLink}
-            className="hover:cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {socialLinks.mail}
-          </a>
+          {socialLinks.map((socLnk) => {
+            return (
+              <a
+                href={socLnk.link}
+                className="hover:cursor-pointer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {socLnk.icon}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

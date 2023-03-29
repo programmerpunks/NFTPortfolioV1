@@ -1,47 +1,45 @@
 import React from "react";
 
 import { FooterData } from "../../content/Footer";
-import { socialLinks } from "../../content/SocialLink";
+import { personallLinks, socialLinks } from "../../content/SocialLink";
 
 const Footer = () => {
   return (
     <div className=" py-20 text-xs sm:text-sm md:text-base text-white">
-      <div className="flex justify-evenly">
-        <div>
-          <ul className="space-y-2">
-            <li>{FooterData.official}</li>
-            <li>
-              <img src={FooterData.divider} alt="" />
-            </li>
-            <li>{FooterData.fluf}</li>
-            <li>{FooterData.party}</li>
-            <li>{FooterData.thingies}</li>
-            <li>{FooterData.scene}</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="space-y-2">
-            <li>{FooterData.contact}</li>
-            <li>
-              <img src={FooterData.divider} alt="" />
-            </li>
-            <li>{socialLinks.flufMail}</li>
-            <li>{socialLinks.beyondMail}</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="space-y-2">
-            <li>{FooterData.follow}</li>
-            <li>
-              <img src={FooterData.divider} alt="" />
-            </li>
-            <li className="flex space-x-2">
-              {socialLinks.twitter}
-              {socialLinks.instagram}
-              {socialLinks.mail}
-            </li>
-          </ul>
-        </div>
+      <div className="flex flex-col md:flex-row justify-center md:justify-evenly">
+        <ul className="space-y-2 flex flex-col items-center  pt-5 md:pt-0">
+          <li>{FooterData.official}</li>
+          <li>
+            <img src={FooterData.divider} alt="" />
+          </li>
+          <li>{FooterData.fluf}</li>
+          <li>{FooterData.party}</li>
+          <li>{FooterData.thingies}</li>
+          <li>{FooterData.scene}</li>
+        </ul>
+        <ul className="space-y-2 flex flex-col items-center  pt-5 md:pt-0">
+          <li>{FooterData.contact}</li>
+          <li>
+            <img src={FooterData.divider} alt="" />
+          </li>
+          <li>{personallLinks.flufMail}</li>
+          <li>{personallLinks.beyondMail}</li>
+        </ul>
+        <ul className="space-y-2 flex flex-col items-center  pt-5 md:pt-0">
+          <li>{FooterData.follow}</li>
+          <li>
+            <img src={FooterData.divider} alt="" />
+          </li>
+          <li className="flex space-x-2">
+            {socialLinks.map((socLnk) => {
+              return (
+                <a href={socLnk.link} rel="noreferrer" target="_blank">
+                  {socLnk.icon}
+                </a>
+              );
+            })}
+          </li>
+        </ul>
       </div>
       <div className="text-center space-y-3 mt-20">
         <p>{FooterData.copyrights}</p>

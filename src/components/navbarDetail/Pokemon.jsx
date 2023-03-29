@@ -6,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 export function Model(props) {
   const ref = useRef();
   useFrame(() => (ref.current.rotation.z += 0.01));
-  const { nodes, materials } = useGLTF('/pokemon.gltf')
+  const { nodes, materials } = useGLTF('/model.gltf')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -16,4 +16,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/pokemon.gltf')
+useGLTF.preload('/model.gltf')

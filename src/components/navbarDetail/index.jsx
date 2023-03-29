@@ -6,6 +6,7 @@ import { OrbitControls } from "@react-three/drei";
 import { RxCross2 } from "react-icons/rx";
 
 import { navbarDetailsData } from "../../content/NavbarDetails/index.js";
+import { socialLinks } from "../../content/SocialLink/index.js";
 
 const NavBarDetail = ({ setValue }) => {
   return (
@@ -23,17 +24,10 @@ const NavBarDetail = ({ setValue }) => {
         </div>
         <div className="top-20 fixed w-full">
           <div className="flex">
-            <div className="flex pt-10 justify-start w-[70%] flex-col px-80">
-              <div className="flex text-[#b1b1b1] justify-between text-center border-b-2 flex-col md:flex-row cursor-pointer">
-                <div className="border-b-4 p-1 lg:p-5 text-white">{navbarDetailsData.den}</div>
-                <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  {navbarDetailsData.suit}
-                </div>
-                <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  {navbarDetailsData.roll}
-                </div>
-                <div className="hover:border-b-4 p-1 lg:p-5 flex-wrap">
-                  {navbarDetailsData.snoop}
+            <div className="lg:flex hidden  pt-10 justify-start w-[70%] flex-col px-80">
+              <div className="flex text-[#b1b1b1] justify-center text-center border-b-2 flex-col md:flex-row cursor-pointer">
+                <div className=" p-1 lg:p-5 text-white">
+                  {navbarDetailsData.den}
                 </div>
               </div>
               <div className="flex flex-wrap mt-10 justify-center">
@@ -75,34 +69,39 @@ const NavBarDetail = ({ setValue }) => {
                   <div className="flex items-center ">
                     <RxCross2 size={25} className="text-white" />
                   </div>
-                  <div className="text-white items-center flex">{navbarDetailsData.roll}</div>
+                  <div className="text-white items-center flex">
+                    {navbarDetailsData.roll}
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex border-l-2 w-[30%] text-white justify-center">
+            <div className="flex md:border-l-2 w-full lg:w-[30%] text-white justify-end lg:justify-center">
               <ul className="flex flex-col justify-center text-end p-10 ">
                 <div className="flex flex-col p-5 text-[24px] text-white">
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    {navbarDetailsData.twiiter}
-                  </li>
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    {navbarDetailsData.medium}
-                  </li>
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
-                    {navbarDetailsData.team}
-                  </li>
+                  {socialLinks.map((socLnk) => {
+                    return (
+                      <a
+                        href={socLnk.link}
+                        className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {socLnk.title}
+                      </a>
+                    );
+                  })}
                 </div>
-                <div className="flex flex-col p-5 text-[48px]">
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
+                <div className="flex flex-col  p-5 text-[24px] md:text-[48px]">
+                  <li className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer">
                     {navbarDetailsData.lore}
                   </li>
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
+                  <li className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer">
                     {navbarDetailsData.burrow}
                   </li>
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
+                  <li className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer">
                     {navbarDetailsData.fluf}
                   </li>
-                  <li className="p-2 hover:text-[#b1b1b1] cursor-pointer">
+                  <li className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer">
                     {navbarDetailsData.roadmap}
                   </li>
                 </div>
