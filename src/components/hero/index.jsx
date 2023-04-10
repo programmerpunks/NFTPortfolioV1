@@ -25,9 +25,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col items-center bg-transparent text-white">
-            {socialLinks.map((socLnk) => {
+            {socialLinks.map((socLnk,index) => {
               return (
                 <a
+                key={index}
                   href={socLnk.link}
                   className="m-5"
                   rel="noreferrer"

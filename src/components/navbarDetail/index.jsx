@@ -78,9 +78,10 @@ const NavBarDetail = ({ setValue }) => {
             <div className="flex md:border-l-2 w-full lg:w-[30%] text-white justify-end lg:justify-center">
               <ul className="flex flex-col justify-center text-end p-10 ">
                 <div className="flex flex-col p-5 text-[24px] text-white">
-                  {socialLinks.map((socLnk) => {
+                  {socialLinks.map((socLnk,index) => {
                     return (
                       <a
+                      key={index}
                         href={socLnk.link}
                         className="p-0 md:p-2 hover:text-[#b1b1b1] cursor-pointer"
                         target="_blank"

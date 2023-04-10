@@ -46,9 +46,10 @@ const Phase = ({
         </div>
         <div className="flex items-center text-4xl">{phase_no + 1}</div>
         <div className="flex space-x-2 items-center">
-          {socialLinks.map((socLnk) => {
+          {socialLinks.map((socLnk, index) => {
             return (
               <a
+                key={index}
                 href={socLnk.link}
                 className="hover:cursor-pointer"
                 target="_blank"

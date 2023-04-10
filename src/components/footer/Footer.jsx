@@ -31,9 +31,9 @@ const Footer = () => {
             <img src={FooterData.divider} alt="" />
           </li>
           <li className="flex space-x-2">
-            {socialLinks.map((socLnk) => {
+            {socialLinks.map((socLnk,index) => {
               return (
-                <a href={socLnk.link} rel="noreferrer" target="_blank">
+                <a href={socLnk.link} key={index} rel="noreferrer" target="_blank">
                   {socLnk.icon}
                 </a>
               );
